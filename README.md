@@ -1,5 +1,5 @@
-# Project 77
+# Project 78
 
-Barter System App, Stage 1
+Barter System App, Stage 2
 
-Added Login screen and login/sign up functionality
+Added registration form and linked to firestore

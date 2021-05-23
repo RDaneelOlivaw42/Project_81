@@ -1,0 +1,30 @@
+import React from 'react';
+import { Image } from 'react-native';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+
+import ExchangeScreen from '../Screens/ExchangeScreen';
+import HomeScreen from '../Screens/HomeScreen';
+
+export const TabNavigator = createBottomTabNavigator({
+
+    HomeScreen: {
+        screen: HomeScreen,
+        navigationOptions: {
+            tabBarIcon: <Image 
+                          style = {{ width: 30, height: 30 }}
+                          source = {require('../assets/homeicon.png')}/>,
+            tabBarLabel: "Home"
+        }
+    },
+
+    ExchangeScreen: {
+        screen: ExchangeScreen,
+        navigationOptions: {
+            tabBarIcon: <Image 
+                          style = {{ width: 30, height: 30 }}
+                          source = {require('../assets/exchangeicon.png')}/>,
+            tabBarLabel: "Exchange"
+        }
+    }
+
+});

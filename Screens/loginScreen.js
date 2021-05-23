@@ -31,7 +31,9 @@ export default class LoginScreen extends React.Component {
             var errorCode = error.code;
             var errorMessage = error.message;
             return alert(errorMessage);
-        })
+        });
+
+        this.props.navigation.navigate('HomeScreen');
 
     }
 
@@ -200,7 +202,7 @@ export default class LoginScreen extends React.Component {
     render(){
         return(
             <View style = {{height: '100%'}}>
-            <ImageBackground source = {require('../bg.png')}  style = {{width: '100%', height: '100%'}}>
+            <ImageBackground source = {require('../assets/bg.png')}  style = {{width: '100%', height: '100%'}}>
             <View style = {{marginLeft: 100, marginRight: 100}}>
                 
                 <View style = {styles.bgBlur} />
@@ -215,6 +217,8 @@ export default class LoginScreen extends React.Component {
                       style = {styles.loginInput}
                       placeholder = "Enter Email-ID"
                       placeholderTextColor = '#F6C4B2'
+                      keyboardType = 'email-address'
+                      autoFocus = {true}
                       onChangeText = {(text)=>{
                           this.setState({
                               emailId: text
@@ -327,7 +331,8 @@ const styles = StyleSheet.create({
         color: '#ffffff',
         borderBottomWidth: 2,
         borderBottomColor: '#494951',
-        margin: 10
+        margin: 10,
+        fontFamily: 'big caslon'
     },
 
     registerButton: {

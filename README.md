@@ -1,5 +1,6 @@
-# Project 78
+# Project 79
 
-Barter System App, Stage 2
+Barter System App, Stage 3
 
-Added registration form and linked to firestore
+Added Tab-Navigation, HomeScreen, ExchangeScreen.
+Added functionality to submit requests, and display list of requests.

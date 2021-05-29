@@ -1,12 +1,31 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Header, Icon, Badge } from 'react-native-elements';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { withNavigation } from 'react-navigation';
+import { DrawerActions } from 'react-navigation-drawer';
 
 const AppHeader = (props) => {
     return(
-        <View style = {{ backgroundColor: '#5C96B6', width: '100%', height: 70, justifyContent: 'center' }}>
-            <Text style = {{ fontFamily: 'big caslon', textAlign: 'center', fontSize: 30 }}>{props.title}</Text>
-        </View>
+        <SafeAreaProvider>
+            <Header 
+              backgroundColor = '#5C96B6'
+              
+              centerComponent = {{
+                  text: props.title,
+                  style: { fontFamily: 'big caslon', textAlign: 'center', fontSize: 30, padding: 5 }
+              }}
+              
+              leftComponent = { <Icon 
+                                  name = 'bars'
+                                  type = 'font-awesome'
+                                  color = '#696969'
+                                  style = {{ paddingLeft: 15, paddingTop: 10}}
+                                  onPress = {()=>{
+                                      props.navigation.dispatch(DrawerActions.toggleDrawer());
+                                  }} /> } />
+        </SafeAreaProvider>
     )
 }
 
-export default AppHeader;
+export default withNavigation(AppHeader);
+//export default AppHeader;

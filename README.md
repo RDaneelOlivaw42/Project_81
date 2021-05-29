@@ -1,6 +1,5 @@
-# Project 79
+# Project 80
 
-Barter System App, Stage 3
+Barter System App, Stage 4
 
-Added Tab-Navigation, HomeScreen, ExchangeScreen.
-Added functionality to submit requests, and display list of requests.
+Added DrawerNavigator and Log-out functionality.

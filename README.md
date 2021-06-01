@@ -1,5 +1,5 @@
-# Project 80
+# Project 81
 
-Barter System App, Stage 4
+Barter System App, Stage 5
 
-Added DrawerNavigator and Log-out functionality.
+Added SettingsScreen and functionality to edit user-profile details in firestore.

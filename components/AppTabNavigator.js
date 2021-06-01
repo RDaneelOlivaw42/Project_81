@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import ExchangeScreen from '../Screens/ExchangeScreen';
 import HomeScreen from '../Screens/HomeScreen';
 
-
 export const TabNavigator = createBottomTabNavigator({
 
     HomeScreen: {

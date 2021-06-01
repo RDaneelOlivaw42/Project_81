@@ -1,4 +1,3 @@
-/*
 //mine
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
@@ -59,8 +58,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     }
 
-});*/
+});
 
+/*
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { DrawerItems } from 'react-navigation-drawer';
@@ -120,4 +120,4 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     }
 
-})
+})*/
